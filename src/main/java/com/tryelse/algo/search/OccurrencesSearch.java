@@ -7,7 +7,7 @@ import java.util.List;
  * O(log(n))
  */
 public class OccurrencesSearch implements Occurrences {
-    public <T extends Comparable> int findOccurrences(T element, List<T> list) {
+    public <T extends Comparable<T>> int findOccurrences(T element, List<T> list) {
         Search search = new BinarySearch();
         int first = search.find(element, list, true);
         int last = search.find(element, list, false);

@@ -7,11 +7,11 @@ import java.util.List;
  * O(log(n))
  */
 public class BinarySearch implements Search {
-    public <T extends Comparable> int find(T element, List<T> list) {
+    public <T extends Comparable<T>> int find(T element, List<T> list) {
         return find(element, list, true);
     }
 
-    public <T extends Comparable> int find(T element, List<T> list, boolean firstOccurrence) {
+    public <T extends Comparable<T>> int find(T element, List<T> list, boolean firstOccurrence) {
         int left = 0;
         int right = list.size() - 1;
         int result = -1;

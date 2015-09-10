@@ -21,6 +21,6 @@ public class CircularSortedArraySearchTest {
     }
 
     private void test(List<Integer> list, int element, int result) {
-        assertEquals(element, search.find(element, list));
+        assertEquals(result, search.find(element, list));
     }
 }

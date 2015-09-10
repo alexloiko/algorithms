@@ -7,7 +7,7 @@ import java.util.List;
  * Only for sorted list without duplicates
  */
 public class CircularPointOfList {
-    public <T extends Comparable> int findRotationPoint(List<T> list) {
+    public <T extends Comparable<T>> int findRotationPoint(List<T> list) {
         int low = 0;
         int high = list.size() - 1;
         while (low <= high) {
